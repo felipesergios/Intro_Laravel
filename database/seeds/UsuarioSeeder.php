@@ -15,7 +15,7 @@ class UsuarioSeeder extends Seeder
         $dados =[
             'name'=>'Felipe',
             'email'=>'admin@mail.com',
-            'password'=>bcrypt("88574753")
+            'password'=>bcrypt("senha")
         ];
         if(User::where('email','=',$dados['email'])->count())
         {
